@@ -45,7 +45,7 @@ def get_ssl_context():
     ctx.verify_mode = ssl.CERT_NONE
     return ctx
 
-# --- SPEECH & MUSIC (UNTOUCHED) ---
+# --- SPEECH & MUSIC ---
 
 async def tts_request(text, voice_id):
     headers = {"Authorization": f"Bearer {API_KEY}"}
